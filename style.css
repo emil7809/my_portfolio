@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(175, 175, 175);
+  display: grid;
+  justify-content: center;
+}
+
+nav {
+  height: 1.5vw;
+  margin-left: -8vw;
+  margin-right: -8vw;
+  position: fixed;
+}
+
+#menu_container {
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+}
+
+#contact_menu {
+  text-align: end;
+}
+
+main {
+  background-color: grey;
+  max-width: 70vw;
+  padding: 5vw;
+  margin-top: 1.5vw;
+}
+
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+#splash {
+  display: grid;
+  justify-content: center;
+}
+
+#pro_vs_personality {
+  height: 10vw;
+  width: 10vw;
+  background-color: white;
+  border-radius: 5vw;
+  margin-left: 4vw;
+}
+
+#page_navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 8vw);
+  justify-content: center;
+  text-align: center;
+  border: solid black 0.01vw;
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding: 0.5vw;
+  backdrop-filter: blur(0.1vw);
+  position: sticky;
+  top: 0;
+  height: 0.8vw;
+}
+
+#what {
+  border: solid black 0.01vw;
+  backdrop-filter: blur(0.1vw);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw;
+}
+
+#what_img {
+  height: 15vw;
+  width: 10vw;
+  background-color: white;
+  margin-left: 4vw;
+  margin-top: -1vw;
+}
+
+.per {
+  display: none;
+}
+
+.show {
+  display: block;
+  color: deeppink;
+}
