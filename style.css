@@ -199,11 +199,12 @@ a {
   margin-left: -5vw;
   margin-right: -5vw;
   padding: 0.5vw;
-  backdrop-filter: blur(0.1vw);
-  position: sticky;
+  /*backdrop-filter: blur(0.1vw);
+   position: sticky;
   top: 1.8vw;
   height: 0.8vw;
-  z-index: 100;
+  z-index: 100; */
+  padding-bottom: 1.5vw;
 }
 
 button {
@@ -222,12 +223,12 @@ button {
   justify-content: center;
   margin-left: -5vw;
   margin-right: -4.9vw;
-  backdrop-filter: blur(0.1vw);
   margin-bottom: 5vw;
   margin-top: 1vw;
   font-size: 0.6vw;
   line-height: 1vw;
   font-family: sans-serif;
+  margin-top: -1.6vw;
 }
 
 tbody {
@@ -239,13 +240,27 @@ tbody {
 
 #display_list tr {
   display: grid;
-  grid-template-rows: 15vw 1vw 1vw;
+  grid-template-rows: 15vw 2.5vw 1vw;
 }
 
 [data-field="img"] img {
   width: 15vw;
   height: 15vw;
   border-radius: 10vw;
+}
+
+[data-field="headline"] {
+  font-size: 2vw;
+  color: white;
+  font-family: sans-serif;
+}
+
+[data-field="tekst"] {
+  font-size: 0.7vw;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-align: start;
 }
 
 .per {
