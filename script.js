@@ -10,7 +10,7 @@ function start() {
 }
 
 function proVsPer() {
-
+//try making a loop
     if (personality === false) {
         personality = true;
         document.querySelector(".per").classList.add("show");
