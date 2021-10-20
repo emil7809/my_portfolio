@@ -1,45 +1,59 @@
 [
     {
-        "headline": "headline 1",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
+        "headline": "Tee Loot Box",
+        "tekst": "This was the first prototype I made in adobe XD",
+        "link": "https://xd.adobe.com/view/67ec17c2-30d0-4819-a0f4-1558fe1945f5-32bf/?fullscreen&hints=off",
+        "img": "img/lootbox.png",
+        "type": "1 Semester"
     },
 
     {
-        "headline": "headline 2",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
-    },
-
-    
-    {
-        "headline": "headline 3",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
+        "headline": "Shotgun Witch",
+        "tekst": "My first game, and my first time opening JS",
+        "link": "https://emilyhoolahan.com/kea/04-animation/spil/",
+        "img": "img/game.png",
+        "type": "1 Semester"
     },
 
     
     {
-        "headline": "headline 4",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
+        "headline": "Ingwersen",
+        "tekst": "My first time working in a group to redign a website",
+        "link": "https://emilyhoolahan.com/kea/05_indhold/ingwersen/",
+        "img": "img/ingwersen.png",
+        "type": "1 Semester"
+    },
+
+    
+    {
+        "headline": "Portfolio",
+        "tekst": "My first fully made website, made on my own",
+        "link": "http://emilyhoolahan.com/kea/06_portfolio/portfolio/index.html",
+        "img": "img/portfolio.png",
+        "type": "1 Semester"
     },
     
     {
-        "headline": "headline 5",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
+        "headline": "Just Journey",
+        "tekst": "Here I worked in a team, to learn how to use JSON in JS",
+        "link": "https://emilyhoolahan.com/kea/07_dynamisk_web/just_journey/index.html",
+        "img": "img/journey.png",
+        "type": "2 Semester"
     },
     
     {
-        "headline": "headline 6",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
+        "headline": "Frederikssund Esport",
+        "tekst": "Working in a team, we redesigned a website using wordpress",
+        "link": "https://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/",
+        "img": "img/esport.png",
+        "type": "2 Semester"
     },
     
     {
-        "headline": "headline 7",
-        "tekst": "ojsndf sekæjbs kæjsdf djkas jdd ksjrgek srwufjsrkæj wrkgh ershkgsrkh fgrkhbfg rshg rk iowes woeijowie weoi",
-        "img": "img/owl.png"
+        "headline": "Harry Potter List",
+        "tekst": "An assignemt to learn how to code visual design",
+        "link": "https://emilyhoolahan.com/kea/11_coding_visual_design/hacked_hogwarts/",
+        "img": "img/hp.png",
+        "type": "3 Semester"
     }
 ]

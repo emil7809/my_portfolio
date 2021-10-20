@@ -260,7 +260,16 @@ tbody {
   color: white;
   font-family: sans-serif;
   font-weight: 100;
-  text-align: start;
+  text-align: center;
+}
+
+[data-field="link"] {
+  margin-top: 0.8vw;
+  font-size: 0.5vw;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-align: center;
 }
 
 .per {

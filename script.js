@@ -6,9 +6,7 @@ let personality = false;
 
 const allProts = [];
 
-const Port = {
-    headline: ""
-}
+const Port = {};
 
 function start() {
     console.log("start");
@@ -55,6 +53,20 @@ function prepareObjects(jsonData) {
     const tekst = jsonObject.tekst;
     port.tekst = tekst;
 
+    const type = jsonObject.type;
+    port.type = type;
+
+    const linkElement = jsonObject.link;
+    if (linkElement.includes("none")){
+        const link = "";
+        port.link = link;
+    } else {
+        const link = `<a href="`+jsonObject.link+`">Link</a>`;
+        port.link = link;
+    }
+    
+    
+
     //add the objekt to the global array
     allProts.push(port);
 
@@ -72,12 +84,14 @@ function displayList(portfolioToDisplay) {
 }
 
 function displayPortfolio(port) {
-    console.log(port);
     const clone = document.querySelector("template#port").content.cloneNode(true);
 
     clone.querySelector("img").src = port.img;
     clone.querySelector("[data-field=headline]").textContent = port.headline;
+    clone.querySelector("[data-field=type]").textContent = port.type;
     clone.querySelector("[data-field=tekst]").textContent = port.tekst;
+    clone.querySelector("[data-field=link]").textContent = port.link;
+    clone.querySelector("[data-field=link]").innerHTML = port.link;
 
     document.querySelector("#list tbody").appendChild(clone);
 }
