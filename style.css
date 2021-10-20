@@ -29,14 +29,28 @@ main {
 
 h1 {
   text-align: center;
+  font-size: 3vw;
+  color: white;
+  font-family: sans-serif;
 }
+
+h2 {
+  font-size: 2vw;
+  color: white;
+  font-family: sans-serif;
+}
+
 h3 {
   text-align: center;
+  font-size: 0.8vw;
+  color: white;
+  font-family: sans-serif;
 }
 
 #splash {
   display: grid;
   justify-content: center;
+  justify-items: center;
 }
 
 #pro_vs_personality {
@@ -44,7 +58,6 @@ h3 {
   width: 10vw;
   background-color: white;
   border-radius: 5vw;
-  margin-left: 4vw;
 }
 
 #page_navigation {
@@ -66,23 +79,36 @@ h3 {
   border: solid black 0.01vw;
   backdrop-filter: blur(0.1vw);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
   margin: 5vw;
 }
 
+#what_p {
+  margin: 0.5vw;
+}
+
+#what h2 {
+  margin-left: -2vw;
+  margin-top: 0.3vw;
+}
+
+#what p {
+  display: inline;
+}
+
 #what_img {
-  height: 15vw;
-  width: 10vw;
+  height: 18vw;
+  width: 12vw;
   background-color: white;
-  margin-left: 4vw;
-  margin-top: -1vw;
+  margin-top: -1.5vw;
 }
 
 .per {
-  display: none;
+  transform: scale (1px);
 }
 
 .show {
-  display: block;
+  display: inline;
   color: deeppink;
 }
