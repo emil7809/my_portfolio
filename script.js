@@ -86,6 +86,8 @@ function prepareObjects(jsonData) {
 
     const type = jsonObject.type;
     port.type = type;
+   
+   
 
     const linkElement = jsonObject.link;
     if (linkElement.includes("none")){
@@ -110,7 +112,7 @@ function prepareObjects(jsonData) {
 
 function selectFilter(event) {
     console.log("select filter");
-    const filter = event.target.dataset.filter;
+    const filter = event.target.dataset.field;
     filterList(filter);
 }
 
@@ -118,23 +120,59 @@ function filterList(filterBy) {
     
     
     let filteredList = allPorts;
+    console.log(filterBy);
 
     if (filterBy === "one") {
         filteredList = allPorts.filter(isOne);
     } else if (filterBy === "two"){
         filteredList = allPorts.filter(isTwo);
+    } else if (filterBy === "three"){
+        filteredList = allPorts.filter(isThree);
+    }  else if (filterBy === "clients"){
+        filteredList = allPorts.filter(isClients);
+    } else if (filterBy === "videos"){
+        filteredList = allPorts.filter(isVideos);
+    }  else if (filterBy === "photo"){
+        filteredList = allPorts.filter(isPhoto);
+    } else if (filterBy === "digi"){
+        filteredList = allPorts.filter(isDigi);
+    } else if (filterBy === "*"){
+        filteredList = allPorts.filter(isAll);
     }
     
     displayList(filteredList);
 }
 
 function isOne(port) {
-    console.log("one");
     return port.type === "1 Semester";
 }
 
 function isTwo(port) {
     return port.type === "2 Semester";
+}
+
+function isThree(port) {
+    return port.type === "3 Semester";
+}
+
+function isClients(port) {
+    return port.type === "Clients";
+}
+
+function isVideos(port) {
+    return port.type === "Video";
+}
+
+function isPhoto(port) {
+    return port.type === "Photography";
+}
+
+function isDigi(port) {
+    return port.type === "Digital Art";
+}
+
+function isAll() {
+    return allPorts;
 }
 
 function displayList(portfolioToDisplay) {
