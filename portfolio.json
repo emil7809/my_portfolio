@@ -9,7 +9,7 @@
 
     {
         "headline": "Shotgun Witch",
-        "tekst": "My first game, and my first time opening JS",
+        "tekst": "My first game, made in HTML, CSS and JS",
         "link": "https://emilyhoolahan.com/kea/04-animation/spil/",
         "img": "img/game.png",
         "type": "1 Semester"
@@ -18,7 +18,7 @@
     
     {
         "headline": "Ingwersen",
-        "tekst": "My first time working in a group to redign a website",
+        "tekst": "My first time working in a group to redign a website, using HTML and CSS",
         "link": "https://emilyhoolahan.com/kea/05_indhold/ingwersen/",
         "img": "img/ingwersen.png",
         "type": "1 Semester"
@@ -27,7 +27,7 @@
     
     {
         "headline": "Portfolio",
-        "tekst": "My first fully made website, made on my own",
+        "tekst": "My first fully made website I made with HTML, CSS and JS",
         "link": "http://emilyhoolahan.com/kea/06_portfolio/portfolio/index.html",
         "img": "img/portfolio.png",
         "type": "1 Semester"
@@ -43,7 +43,7 @@
     
     {
         "headline": "Frederikssund Esport",
-        "tekst": "Working in a team, we redesigned a website using wordpress",
+        "tekst": "Working in a team, we redesigned a website using Wordpress",
         "link": "https://emilyhoolahan.com/kea/10_eksamen/frederikssundesport/",
         "img": "img/esport.png",
         "type": "2 Semester"
@@ -51,9 +51,189 @@
     
     {
         "headline": "Harry Potter List",
-        "tekst": "An assignemt to learn how to code visual design",
+        "tekst": "An assignemt to learn how to code visual design in JS",
         "link": "https://emilyhoolahan.com/kea/11_coding_visual_design/hacked_hogwarts/",
         "img": "img/hp.png",
         "type": "3 Semester"
+    },
+
+    {
+        "headline": "Dragon Build",
+        "tekst": "My first configurator, made in CSS and JS",
+        "link": "https://emilyhoolahan.com/kea/12_advanced_animation/own_configurator/",
+        "img": "img/dragon.png",
+        "type": "3 Semester"
+    },
+
+    {
+        "headline": "Nelz",
+        "tekst": "My first payed job, a website I built in Wordpress",
+        "link": "Nelz.dk",
+        "img": "img/nelz.png",
+        "type": "Clients"
+    },
+
+    {
+        "headline": "Esport Video",
+        "tekst": "A Honest trailer we filmed as a team, and I eddited in Premierepro",
+        "link": "https://www.youtube.com/watch?v=A3OmFyK0GbM",
+        "img": "img/esport_video.png",
+        "type": "Video | 2 Semester"
+    },
+
+    {
+        "headline": "Bare en Blå",
+        "tekst": "An add campain for Tuborg Nul, filmed in a group and I eddited in Premierepro",
+        "link": "https://www.youtube.com/watch?v=wuJRWzxfAQQ",
+        "img": "img/tuborg.png",
+        "type": "Video | 2 Semester"
+    },
+    {
+        "headline": "My passion is India",
+        "tekst": "An interwiew about a woman passionet about India, filmed on a phone, eddtied in premierepro",
+        "link": "https://www.youtube.com/watch?v=3W6IJGc2faQ&t=2s",
+        "img": "img/india.png",
+        "type": "Video | 1 Semester"
+    },
+    {
+        "headline": "How to life?",
+        "tekst": "My first Animation made in Adobe Flash Player",
+        "link": "https://www.youtube.com/watch?v=7piGjP7KMkY",
+        "img": "img/life.png",
+        "type": "Video"
+    },
+
+    {
+        "headline": "Aassignment Twist",
+        "tekst": "I feel comfortable eddting in Premerepro, so I made my own solution to the assignment",
+        "link": "https://www.youtube.com/watch?v=UHAUfBTcjAQ",
+        "img": "img/bomuld.png",
+        "type": "Video | 1 Semester"
+    },
+
+    {
+        "headline": "Wildflowers",
+        "tekst": "My firt payed job for filmaking",
+        "link": "https://www.youtube.com/watch?v=8OY97wZjFYk",
+        "img": "img/flower.png",
+        "type": "Video"
+    },
+
+    {
+        "headline": "Montage",
+        "tekst": "A simple montage used for a website assignment",
+        "link": "https://www.youtube.com/watch?v=85jFOkRN6eQ",
+        "img": "img/montage.png",
+        "type": "Video | 1 Semester"
+    },
+    {
+        "headline": "Ember Owl",
+        "tekst": "An Idea I had while looking in to a fireplace",
+        "link": "none",
+        "img": "img/owl.png",
+        "type": "Digital Art"
+    },
+    {
+        "headline": "Althea",
+        "tekst": "My attemt of telling a storry in a photo",
+        "link": "none",
+        "img": "img/althea1.jpg",
+        "type": "Photography"
+    },
+
+    {
+        "headline": "Celestial Navigation",
+        "tekst": "A game I made in JS back in 2018",
+        "link": "https://emilyhoolahan.com/mycode/spil/",
+        "img": "img/celestial1.png",
+        "type": "1 Semester"
+    },
+
+    {
+        "headline": "One last Game",
+        "tekst": "I made a web comick for my youtube channel",
+        "link": "none",
+        "img": "img/comick.jpg",
+        "type": "Digital Art"
+    },
+
+    {
+        "headline": "Emilie",
+        "tekst": "A colorfull photo of Emlie",
+        "link": "none",
+        "img": "img/emilie1.jpg",
+        "type": "Photography"
+    },
+
+    {
+        "headline": "Eriet",
+        "tekst": "Half dragon, half elf, Eriat was a my charcter in a Pathfinder game",
+        "link": "none",
+        "img": "img/eriet1.jpg",
+        "type": "Digital Art"
+    },
+
+    {
+        "headline": "Fire and Wather",
+        "tekst": "A soothing photo of Fire and Wather",
+        "link": "none",
+        "img": "img/fire1.jpg",
+        "type": "Photography"
+    },
+
+    {
+        "headline": "FLouise",
+        "tekst": "A stunning photo of Louise",
+        "link": "none",
+        "img": "img/louise1.jpg",
+        "type": "Photography"
+    },
+
+    {
+        "headline": "Faire World",
+        "tekst": "One of my first art works made in Photoshop",
+        "link": "none",
+        "img": "img/room.jpg",
+        "type": "Digital Art"
+    },
+
+    {
+        "headline": "Rose",
+        "tekst": "This witch was truly chaotick to play!",
+        "link": "none",
+        "img": "img/rose.jpg",
+        "type": "Digital Art"
+    },
+
+    {
+        "headline": "Speedway",
+        "tekst": "I had the pleasure of photographing a Speedway race!",
+        "link": "none",
+        "img": "img/speed1.png",
+        "type": "Photography"
+    },
+
+    {
+        "headline": "Stoned",
+        "tekst": "I took them off the tracks when I was done, promise!",
+        "link": "none",
+        "img": "img/stoned1.jpg",
+        "type": "Photography"
+    },
+
+    {
+        "headline": "Forrest Witch",
+        "tekst": "I never had the pleasure of player her, but she was fun to draw",
+        "link": "none",
+        "img": "img/witch1.jpg",
+        "type": "Digital Art"
+    },
+
+    {
+        "headline": "Willow",
+        "tekst": "This is my pet sugar glider Willow, she is shy",
+        "link": "none",
+        "img": "img/willow1.jpg",
+        "type": "Digital Art"
     }
 ]

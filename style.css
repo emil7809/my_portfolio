@@ -182,17 +182,13 @@ a {
   margin-top: -2vw;
 }
 
-#what_done {
-  margin-bottom: 50vw;
-}
-
 #what_done_h2 {
   text-align: center;
 }
 
 #filter_nav {
   display: grid;
-  grid-template-columns: repeat(7, 5vw);
+  grid-template-columns: repeat(8, 5vw);
   justify-content: center;
   text-align: center;
   border: solid black 0.01vw;
@@ -219,7 +215,7 @@ button {
 
 #sorting {
   display: grid;
-  grid-template-columns: 5vw 5vw 5vw;
+  grid-template-columns: 5vw 5vw;
   justify-content: center;
   margin-left: -5vw;
   margin-right: -4.9vw;
@@ -270,6 +266,16 @@ tbody {
   font-family: sans-serif;
   font-weight: 100;
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5vw;
+}
+
+footer img {
+  width: 1vw;
+  margin-bottom: -0.2vw;
 }
 
 .per {
