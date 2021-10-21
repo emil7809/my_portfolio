@@ -4,8 +4,11 @@ window.addEventListener("DOMContentLoaded", start);
 
 let personality = false;
 
-const allProts = [];
+//const per = document.querySelector(".per").textContent;
+// let iterator;
+// let max;
 
+const allPorts = [];
 const Port = {};
 
 function start() {
@@ -13,6 +16,13 @@ function start() {
     document.querySelector("#pro_vs_personality").addEventListener("click", proVsPer);
 
     loadJSON();
+    makeButtons();
+}
+
+function makeButtons() {
+    console.log("make buttons");
+    document.querySelectorAll("[data-action='filter']")
+    .forEach(button => button.addEventListener("click", selectFilter));
 }
 
 function proVsPer() {
@@ -20,7 +30,9 @@ function proVsPer() {
     if (personality === false) {
         personality = true;
         document.querySelector(".per").classList.add("show");
-        document.querySelector("#pro_vs_personality").style.backgroundColor = "pink";
+        //per.classList.add("show");
+        document.querySelector("#pro_vs_personality").style.backgroundColor = "deeppink";
+        //init();
     } else {
         personality = false;
         document.querySelector(".per").classList.remove("show"); 
@@ -28,6 +40,25 @@ function proVsPer() {
     }
     
 }
+
+// function init(){
+//     iterator = 0;
+//     max = per.length;
+//     document.querySelector(".per").innerHTML = "";
+
+//     loop();
+// }
+
+// function loop() {
+//     iterator++;
+
+//     if (iterator <= max) {
+//         document.querySelector(".per").innerHTML += per[iterator-1];
+//         setTimeout(loop, 30);
+//     }
+
+    
+// }
 
 function loadJSON() {
     fetch("portfolio.json")
@@ -68,20 +99,51 @@ function prepareObjects(jsonData) {
     
 
     //add the objekt to the global array
-    allProts.push(port);
+    allPorts.push(port);
 
     });
 
-    displayList(allProts);
+    displayList(allPorts);
+}
+
+
+
+function selectFilter(event) {
+    console.log("select filter");
+    const filter = event.target.dataset.filter;
+    filterList(filter);
+}
+
+function filterList(filterBy) {
+    
+    
+    let filteredList = allPorts;
+
+    if (filterBy === "one") {
+        filteredList = allPorts.filter(isOne);
+    } else if (filterBy === "two"){
+        filteredList = allPorts.filter(isTwo);
+    }
+    
+    displayList(filteredList);
+}
+
+function isOne(port) {
+    console.log("one");
+    return port.type === "1 Semester";
+}
+
+function isTwo(port) {
+    return port.type === "2 Semester";
 }
 
 function displayList(portfolioToDisplay) {
- // clear the list
- document.querySelector("#list tbody").innerHTML = "";
-
- // build a new list
- portfolioToDisplay.forEach(displayPortfolio);
-}
+    // clear the list
+    document.querySelector("#list tbody").innerHTML = "";
+   
+    // build a new list
+    portfolioToDisplay.forEach(displayPortfolio);
+   }
 
 function displayPortfolio(port) {
     const clone = document.querySelector("template#port").content.cloneNode(true);

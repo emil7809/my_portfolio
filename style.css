@@ -286,3 +286,7 @@ footer img {
   display: inline;
   color: deeppink;
 }
+
+.show p {
+  color: deeppink;
+}
