@@ -1,0 +1,332 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url(img/space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  display: grid;
+  justify-content: center;
+  backdrop-filter: brightness(15%);
+}
+
+nav {
+  height: 1.5vw;
+  margin-left: -8vw;
+  margin-right: -8vw;
+  position: fixed;
+  padding: 0.5vw;
+  top: 0;
+}
+
+#menu_container {
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+}
+
+#contact_menu {
+  text-align: end;
+}
+
+main {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4962359943977591) 0%,
+    rgba(34, 0, 58, 0.5018382352941176) 6%,
+    rgba(59, 0, 102, 0.4962359943977591) 39%,
+    rgba(0, 0, 0, 0.5046393557422969) 100%
+  );
+  width: 70vw;
+  padding: 5vw;
+  margin-top: 1.5vw;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 2vw;
+  color: white;
+  font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  display: inline;
+  font-size: 1vw;
+  line-height: 1vw;
+  color: rgb(218, 218, 218);
+  font-family: "sans-serif";
+  font-weight: 200;
+}
+a {
+  display: inline;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+#splash {
+  background-image: url(img/me/emily.png);
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: -5vw;
+  height: 74vw;
+}
+
+#splash h1 {
+  font-size: 8rem;
+  margin-top: 36vw;
+  margin-bottom: 0;
+  font-family: "Charm", cursive;
+  text-shadow: 2px 2px 8px #000000;
+  opacity: 0.8;
+}
+
+#splash h3 {
+  margin-top: -3vw;
+  margin-left: 16vw;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+#pro_vs_personality {
+  height: 13vw;
+  width: 13vw;
+  background-color: white;
+  border-radius: 10vw;
+  margin-top: 8.8vw;
+  margin-bottom: 5vw;
+  cursor: pointer;
+  filter: blur(5px);
+}
+
+#page_navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 8vw);
+  justify-content: center;
+  text-align: center;
+  margin-left: -5vw;
+  margin-right: -5vw;
+  margin-top: 5vw;
+  padding: 0.5vw;
+  backdrop-filter: blur(100px);
+  position: sticky;
+  top: 0;
+  height: 1.2vw;
+  z-index: 100;
+}
+
+#what {
+  backdrop-filter: blur(0.1vw);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  margin: 5vw;
+  margin-top: 10vw;
+}
+
+#what_p {
+  margin: 2vw;
+}
+
+#what h2 {
+  margin-left: -5vw;
+  margin-top: 0.3vw;
+}
+
+#what_img {
+  background-image: url(img/me/emily-135.png);
+  background-size: cover;
+  height: 25vw;
+  width: 21vw;
+  margin-top: -2vw;
+}
+
+#why {
+  backdrop-filter: blur(0.1vw);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  margin: 5vw;
+  margin-top: 10vw;
+}
+
+#why_p {
+  margin: 2vw;
+}
+
+#why h2 {
+  margin-left: 3.5vw;
+  margin-right: -3.5vw;
+  margin-top: 0.3vw;
+  text-align: end;
+}
+
+#why_img {
+  background-image: url(img/me/emily-110.png);
+  background-size: cover;
+  height: 25vw;
+  width: 29vw;
+  margin-top: -2vw;
+  margin-left: -5vw;
+}
+
+/**/
+
+#how {
+  backdrop-filter: blur(0.1vw);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  margin: 5vw;
+  margin-top: 10vw;
+}
+
+#how_p {
+  margin: 2vw;
+}
+
+#how h2 {
+  margin-left: -5vw;
+  margin-top: 0.3vw;
+}
+
+#how_img {
+  background-image: url(img/me/emily-137.png);
+  background-size: cover;
+  height: 25vw;
+  width: 21vw;
+  margin-top: -2vw;
+}
+
+#what_done_h2 {
+  text-align: center;
+}
+
+#filter_nav {
+  display: grid;
+  grid-template-columns: repeat(8, 5vw);
+  justify-content: center;
+  text-align: center;
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding: 0.5vw;
+  backdrop-filter: blur(0.1vw);
+  /* position: sticky;
+  top: 1.8vw;
+  height: 0.8vw;
+  z-index: 100; */
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+tbody {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 5vw 3.5vw;
+  margin-top: 5vw;
+  color: white;
+}
+
+th {
+  text-align: start;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+#display_list tr {
+  display: grid;
+  width: 15vw;
+}
+
+[data-field="img"] img {
+  width: 15vw;
+  height: 15vw;
+}
+
+[data-field="headline"] {
+  font-size: 2vw;
+  color: white;
+  font-family: sans-serif;
+}
+
+[data-field="tekst"] {
+  font-size: 0.7vw;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+
+  z-index: 5;
+}
+
+[data-field="link"] {
+  margin-top: 0.8vw;
+  font-size: 0.5vw;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5vw;
+}
+
+footer img {
+  width: 1vw;
+  margin-bottom: -0.2vw;
+}
+
+.per {
+  display: none;
+}
+
+.show {
+  display: inline;
+  color: deeppink;
+}
+
+.show p {
+  color: deeppink;
+}
+
+.border {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px;
+}

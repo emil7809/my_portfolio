@@ -1,40 +1,24 @@
-body {
-  position: relative;
+img {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  background-image: url(img/space.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  z-index: 1;
+}
+body {
+  background-color: rgb(21, 3, 51);
   display: grid;
-  justify-content: center;
-  backdrop-filter: brightness(15%);
+  grid-template-columns: 1fr 350px 1fr;
 }
 
-nav {
-  height: 1.5vw;
-  margin-left: -8vw;
-  margin-right: -8vw;
-  position: fixed;
-  padding: 0.5vw;
-  top: 0;
+@media only screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr 600px 1fr;
+  }
 }
 
-#menu_container {
-  display: grid;
-  grid-template-columns: 48vw 48vw;
-}
-
-#contact_menu {
-  text-align: end;
+body > * {
+  grid-column: 2;
+  padding: 1rem;
 }
 
 main {
-  background: rgb(113, 0, 97);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.4962359943977591) 0%,
@@ -42,53 +26,63 @@ main {
     rgba(59, 0, 102, 0.4962359943977591) 39%,
     rgba(0, 0, 0, 0.5046393557422969) 100%
   );
-  max-width: 70vw;
-  padding: 5vw;
-  margin-top: 1.5vw;
 }
 
+/*FONTS*/
 h1 {
-  text-align: center;
-  font-size: 3vw;
   color: white;
-  font-family: sans-serif;
+  font-size: 3rem;
+  font-family: "Charm", cursive;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
 }
 
 h2 {
-  font-size: 2vw;
   color: white;
-  font-family: sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-}
-
-h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: white;
-  font-family: sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-}
-
-p {
-  display: inline;
-  font-size: 1vw;
-  line-height: 1vw;
-  color: rgb(218, 218, 218);
+  font-size: 2rem;
   font-family: "sans-serif";
-  font-weight: 200;
 }
-a {
-  display: inline;
-  font-size: 0.7vw;
-  line-height: 1vw;
+h3 {
   color: white;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "sans-serif";
+  font-weight: 100;
+  text-align: center;
+  margin-top: 0;
 }
+p,
+a {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "sans-serif";
+  text-decoration: none;
+}
+/*FONTS*/
+
+/*NAV*/
+
+#menu_container {
+  display: flex;
+}
+
+#logo img {
+  width: 2rem;
+  margin-right: 0.8rem;
+}
+
+#contact_button p {
+  display: inline;
+}
+
+/*NAV*/
+
+/*SPLASH*/
 
 #splash {
   background-image: url(img/me/emily.png);
@@ -96,134 +90,166 @@ a {
   display: grid;
   justify-content: center;
   justify-items: center;
-  margin: -5vw;
-  height: 74vw;
+  margin: -1rem;
+  width: 22rem;
 }
 
 #splash h1 {
-  font-size: 8rem;
-  margin-top: 36vw;
-  margin-bottom: 0;
-  font-family: "Charm", cursive;
-  text-shadow: 2px 2px 8px #000000;
-  opacity: 0.8;
+  margin-top: 7rem;
 }
 
-#splash h3 {
-  margin-top: -3vw;
-  margin-left: 16vw;
-  text-shadow: 2px 2px 5px #000000;
+@media only screen and (min-width: 600px) {
+  #splash {
+    width: 105.6%;
+    height: 25rem;
+  }
+
+  #splash h1 {
+    margin-top: 14rem;
+  }
 }
 
-#pro_vs_personality {
-  height: 13vw;
-  width: 13vw;
-  background-color: white;
-  border-radius: 10vw;
-  margin-top: 8.8vw;
-  margin-bottom: 5vw;
-  cursor: pointer;
-  filter: blur(5px);
-}
+/*SPLASH*/
+
+/*PAGE NAV*/
 
 #page_navigation {
-  display: grid;
-  grid-template-columns: repeat(4, 8vw);
-  justify-content: center;
-  text-align: center;
-  margin-left: -5vw;
-  margin-right: -5vw;
-  margin-top: 5vw;
-  padding: 0.5vw;
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  width: 22rem;
+  margin-left: -1rem;
   backdrop-filter: blur(100px);
   position: sticky;
   top: 0;
-  height: 1.2vw;
+  height: 3rem;
   z-index: 100;
 }
 
+#page_navigation a {
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#page_navigation a:nth-child(4) {
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 4rem;
+  height: 0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  #page_navigation {
+    width: 105.7%;
+    justify-content: center;
+    margin-left: -1rem;
+  }
+
+  #page_navigation a {
+    font-size: 1rem;
+  }
+
+  #page_navigation a:nth-child(4) {
+    width: 8rem;
+    height: 0.9rem;
+  }
+}
+
+/*PAGE NAV*/
+
+/*WHAT*/
+
 #what {
   backdrop-filter: blur(0.1vw);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  margin: 5vw;
-  margin-top: 10vw;
+  margin-top: 5rem;
 }
 
 #what_p {
-  margin: 2vw;
-}
-
-#what h2 {
-  margin-left: -5vw;
-  margin-top: 0.3vw;
+  margin: 1rem;
 }
 
 #what_img {
   background-image: url(img/me/emily-135.png);
   background-size: cover;
-  height: 25vw;
-  width: 21vw;
-  margin-top: -2vw;
+  height: 15rem;
+  width: 16rem;
+  margin-left: 1.8rem;
 }
+
+@media only screen and (min-width: 600px) {
+  #what {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    margin: 1rem;
+    margin-top: 5rem;
+  }
+}
+
+/*WHAT*/
+
+/*WHY*/
 
 #why {
   backdrop-filter: blur(0.1vw);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-items: center;
-  margin: 5vw;
-  margin-top: 10vw;
+  margin-top: 5rem;
 }
 
 #why_p {
-  margin: 2vw;
-}
-
-#why h2 {
-  margin-left: 3.5vw;
-  margin-right: -3.5vw;
-  margin-top: 0.3vw;
-  text-align: end;
+  margin: 1rem;
 }
 
 #why_img {
   background-image: url(img/me/emily-110.png);
   background-size: cover;
-  height: 25vw;
-  width: 29vw;
-  margin-top: -2vw;
-  margin-left: -5vw;
+  height: 15rem;
+  width: 19rem;
 }
 
-/**/
+@media only screen and (min-width: 600px) {
+  #why {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    margin: 1rem;
+    margin-top: 5rem;
+  }
+}
+
+/*WHY*/
+
+/*HOW*/
 
 #how {
   backdrop-filter: blur(0.1vw);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  margin: 5vw;
-  margin-top: 10vw;
+  margin-top: 5rem;
 }
 
 #how_p {
-  margin: 2vw;
-}
-
-#how h2 {
-  margin-left: -5vw;
-  margin-top: 0.3vw;
+  margin: 1rem;
 }
 
 #how_img {
   background-image: url(img/me/emily-137.png);
   background-size: cover;
-  height: 25vw;
-  width: 21vw;
-  margin-top: -2vw;
+  height: 15rem;
+  width: 18rem;
 }
+
+@media only screen and (min-width: 600px) {
+  #how {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    margin: 1rem;
+    margin-top: 5rem;
+  }
+}
+
+/*HOW*/
+
+/*WHAT*/
 
 #what_done_h2 {
   text-align: center;
@@ -231,116 +257,109 @@ a {
 
 #filter_nav {
   display: grid;
-  grid-template-columns: repeat(8, 5vw);
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+  justify-items: center;
   text-align: center;
-  margin-left: -5vw;
-  margin-right: -5vw;
-  padding: 0.5vw;
   backdrop-filter: blur(0.1vw);
-  /* position: sticky;
-  top: 1.8vw;
-  height: 0.8vw;
-  z-index: 100; */
+  width: 23.5rem;
+  margin-left: -2rem;
 }
 
 button {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 0.7vw;
-  line-height: 1vw;
+  font-size: 1rem;
   color: white;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 8rem;
 }
+
+@media only screen and (min-width: 600px) {
+  #filter_nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    width: 100%;
+    margin-left: 0rem;
+  }
+}
+
+/*PORTFOLIO*/
 
 tbody {
-  width: 70vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 5vw 3.5vw;
-  margin-top: 5vw;
-  color: white;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  margin-top: 5rem;
 }
-
 th {
   text-align: start;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  color: white;
 }
 
 #display_list tr {
   display: grid;
-  width: 15vw;
+  width: 20rem;
 }
 
-[data-field="img"] img {
-  width: 15vw;
-  height: 15vw;
+@media only screen and (min-width: 600px) {
+  #display_list tr {
+    width: 35rem;
+  }
 }
 
 [data-field="headline"] {
-  font-size: 2vw;
-  color: white;
-  font-family: sans-serif;
+  font-size: 2rem;
 }
 
-[data-field="tekst"] {
-  font-size: 0.7vw;
-  color: white;
-  font-family: sans-serif;
-  font-weight: 100;
-
-  z-index: 5;
+[data-field="type"] {
+  color: gray;
 }
 
 [data-field="link"] {
-  margin-top: 0.8vw;
-  font-size: 0.5vw;
-  color: white;
-  font-family: sans-serif;
-  font-weight: 100;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
-#popup {
-  height: 70vw;
-  position: fixed;
-  top: 0;
-  z-index: 50;
-}
+/*PORTFOLIO*/
 
-#popup_container {
-  width: 50vw;
-  height: 70vw;
-  backdrop-filter: blur(100px);
-}
+/*WHAT*/
+
+/*FOOTER*/
 
 footer {
   text-align: center;
-  padding: 0.5vw;
+  padding: 0.5rem;
+  margin-top: 10rem;
+}
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
 }
 
 footer img {
-  width: 1vw;
-  margin-bottom: -0.2vw;
+  width: 2rem;
+  filter: invert(100%);
+  padding: 1rem;
 }
+
+/*FOOTER*/
+
+/*ANIMATIONS*/
 
 .per {
   display: none;
 }
 
-.show {
-  display: inline;
-  color: deeppink;
-}
-
-.show p {
-  color: deeppink;
-}
-
-.border {
-  border: 1px solid white;
-  border-radius: 20px;
-  padding: 5px;
-}
+/*ANIMATIONS*/
