@@ -17,6 +17,8 @@ function start() {
     .querySelector("#pro_vs_personality")
     .addEventListener("click", proVsPer);
 
+    //document.querySelector("#popup").classList.add("per");
+
   loadJSON();
   makeButtons();
 }
@@ -191,6 +193,13 @@ function displayPortfolio(port) {
   clone.querySelector("[data-field=tekst]").textContent = port.tekst;
   clone.querySelector("[data-field=link]").textContent = port.link;
   clone.querySelector("[data-field=link]").innerHTML = port.link;
+  clone.querySelector("[data-field=headline]").addEventListener("click", () => showDetails(port)); 
+  clone.querySelector("img").addEventListener("click", () => showDetails(port)); 
 
   document.querySelector("#list tbody").appendChild(clone);
-}
+
+  function showDetails(thePort) {
+    location.href = `portfolio.html?id=${thePort._id}`;
+  }
+
+  }

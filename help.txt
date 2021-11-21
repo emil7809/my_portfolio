@@ -15,3 +15,6 @@ maker all tekst white
 make pop up 
 
 contack 
+
+HELP
+fixed posetion on pop up 

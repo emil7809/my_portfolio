@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Emily Hoolahan</title>
+
+</head>
+<body>
+
+    <article>
+      <p class="x">X</p>
+      <img src="" alt="element" class="popup_img">
+      <h2 class="popup_headline"></h2>
+      <p class="popup_description"></p>
+    </article>
+
+    <script>
+  const urlParamas = new URLSearchParams(window.location.search);
+  const id = urlParamas.get("id");
+
+window.addEventListener("DOMContentLoaded", loadJSON);
+
+// function start() {
+//     console.log("start");
+//     function loadJSON();
+// }
+
+function loadJSON() {
+  fetch(`portfolio.json${id}`)
+    .then((response) => response.json())
+    .then((jsonData) => {
+      prepareObjects(jsonData);
+    });
+}
+
+function prepareObjects(jsonData) {
+    jsonData.forEach((jsonObject) => {
+    //crate new object
+    const port = Object.create(Port);
+
+    const img = jsonObject.img;
+    port.img = img;
+
+    const headline = jsonObject.headline;
+    port.headline = headline;
+
+    //add the objekt to the global array
+    allPorts.push(port);
+  });
+
+  displayDetails(port); 
+}
+
+function displayDetails(port) {
+
+document.querySelector(".popup_img").src = port.img;
+document.querySelector(".popup_headline").textContent = port.headline;
+
+}
+    </script>
+</body>
+</html>
